@@ -2,12 +2,12 @@
 Twitter data analysis using kibana and elasticsearch
 
 Creating the Twitter Source
-Create the FlinkTwitterStreamCount.scala file with following content:
+Create the TwitterStreamCount.scala file with following content:
 import java.util.Properties
-import org.apache.flink.streaming.api.scala._
-import org.apache.flink.streaming.connectors.twitter.TwitterSource
+import org.apache.twitter.streaming.api.scala._
+import org.apache.twitter.streaming.connectors.twitter.TwitterSource
 
-object FlinkTwitterStreamCount {
+object TwitterStreamCount {
   def main(args: Array[String]) {
 
     val env = StreamExecutionEnvironment.getExecutionEnvironment
